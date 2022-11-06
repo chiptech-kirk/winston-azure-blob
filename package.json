@@ -38,6 +38,8 @@
     "lint": "eslint 'lib/**/*.ts' --fix",
     "prepublish": "yarn run build",
     "release": "standard-version",
+    "node:num8": "node ./examples/number8.js",
+    "pm2:num8": "pm2 start ./examples/number8.js",
     "test": "DEBUG='winston-azure-blob' env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'test/**/*.ts'"
   },
   "dependencies": {
